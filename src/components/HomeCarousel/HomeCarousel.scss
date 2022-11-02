@@ -1,0 +1,218 @@
+.slider {
+  li {
+    div {
+      height: 100%;
+    }
+  }
+}
+
+.slide-item {
+  div {
+    background-color: white;
+  }
+}
+
+.carousel-container {
+  height: calc(90vh - 100px);
+
+  .carousel-inner {
+    height: 100%;
+
+    .carousel-item {
+      height: 100%;
+
+      img {
+        height: 100%;
+      }
+
+      .carousel-caption {
+        background-color: white;
+
+        h3 {
+          color: green;
+          text-shadow: 0px 0px 5px lightgray;
+          margin-left: 20px;
+        }
+
+        p {
+          color: black;
+        }
+
+        img {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-container {
+    height: calc(60vh - 100px);
+  }
+
+  #logoImage {
+    display: none !important;
+    top: 0%;
+  }
+}
+
+// @media only screen and (max-width: 600px) {}
+
+.banner-description {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  background-color: #000000d8;
+  padding: 40px;
+  padding-left: 30px;
+  color: white;
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.carousel-caption {
+  top: 1.25rem !important;
+  left: 30% !important;
+  right: 30% !important;
+  bottom: auto !important;
+
+}
+
+
+// .logoimage {
+//   h3 {
+//     color: green;
+//     text-shadow: 0px 0px 5px lightgray;
+//   }
+
+//   p {
+//     color: black;
+//   }
+// }
+
+@media only screen and (max-width: 600px) {
+  #logo_ecosystem {
+    margin: auto;
+    width: 55%;
+    padding-top: 30px;
+  }
+
+  .my_pic {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .banner-description {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    background-color: #000000d8;
+    padding: 20px;
+    padding-left: 30px;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #logo_ecosystem {
+    margin: auto;
+    width: 55%;
+    padding-top: 30px;
+  }
+
+  .my_pic {
+    width: 130px !important;
+    height: 130px !important;
+  }
+
+  .banner-description {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    background-color: #000000d8;
+    padding: 20px;
+    padding-left: 30px;
+    color: white;
+    font-size: 28px;
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #logo_ecosystem {
+    margin: auto;
+    width: 50%;
+    padding-top: 30px;
+  }
+
+  .my_pic {
+    width: 140px !important;
+    height: 140px !important;
+  }
+
+  .banner-description {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    background-color: #000000d8;
+    padding: 20px;
+    padding-left: 30px;
+    color: white;
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #logo_ecosystem {
+    margin: auto;
+    width: 30%;
+    padding-top: 30px;
+  }
+
+  .my_pic {
+    width: 180px !important;
+    height: 180px !important;
+  }
+
+  .banner-description {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    background-color: #000000d8;
+    padding: 20px;
+    padding-left: 30px;
+    color: white;
+    font-size: 35px;
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #logo_ecosystem {
+    margin: auto;
+    width: 30%;
+    padding-top: 30px;
+  }
+
+  .my_pic {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .banner-description {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    background-color: #000000d8;
+    padding: 20px;
+    padding-left: 30px;
+    color: white;
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
+}

@@ -1,0 +1,16 @@
+.aoc-image,
+.aoc-content {
+  background-color: #ffa05c;
+}
+
+.aoc-content {
+  color: white;
+  ul {
+    list-style-type: disc;
+    li {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+  }
+}

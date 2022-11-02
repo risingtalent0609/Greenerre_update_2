@@ -1,0 +1,24 @@
+.item-control {
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img {
+      margin-bottom: 20px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 5px solid white;
+      box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.3);
+    }
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: green;
+  }
+}

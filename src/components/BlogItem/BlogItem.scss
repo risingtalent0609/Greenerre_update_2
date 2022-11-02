@@ -1,0 +1,37 @@
+.blog-item {
+  border: 1px solid #aaa;
+  height: 100%;
+}
+
+.top-left {
+  border-right: none;
+  border-bottom: none;
+}
+
+.top-right {
+  border-bottom: 0px;
+}
+
+.bottom-left {
+  border-right: 0px;
+}
+.bottom-right {
+}
+
+@media only screen and (max-width: 768px) {
+  .top-left {
+    border: 1px solid #aaaaaa;
+    border-bottom: 0px;
+  }
+  .top-right {
+    border: 1px solid #aaaaaa;
+    border-bottom: 0px;
+  }
+  .bottom-left {
+    border: 1px solid #aaaaaa;
+    border-bottom: 0px;
+  }
+  .bottom-right {
+    border: 1px solid #aaaaaa;
+  }
+}

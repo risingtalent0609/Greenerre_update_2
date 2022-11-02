@@ -1,0 +1,41 @@
+.home-content {
+  .card {
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 70%;
+      aspect-ratio: 1;
+    }
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: green;
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+  .card-title {
+    font-size: 16px!important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .card-title {
+    font-size: 24px!important;
+  }
+}
+@media screen and (max-width: 866px) {
+  .card-title {
+    font-size: 18px!important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-title {
+    font-size: 28px!important;
+  }
+}

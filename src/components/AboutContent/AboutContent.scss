@@ -1,0 +1,28 @@
+.content-item {
+  border: 1px solid #aaaaaa;
+  padding-left: 5em !important;
+  padding-right: 5em !important;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  span {
+    max-width: 80%;
+    word-wrap: normal;
+  }
+}
+
+.about-me {
+  p {
+    font-size: 1.2em;
+  }
+}
+
+.right-item {
+  border-left: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .right-item {
+    border: 1px solid #aaaaaa;
+    border-top: 0px;
+  }
+}

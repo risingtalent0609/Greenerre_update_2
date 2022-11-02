@@ -84,7 +84,7 @@ const HomeCarousel = () => {
             top: "20%",
             width: "100%",
             display: "flex",
-            "justify-content": "center",
+            justifyContent: "center",
           }}
           id="logoImage"
         >
@@ -92,8 +92,8 @@ const HomeCarousel = () => {
             style={{
               backgroundColor: "white",
               padding: "40px",
-              "padding-left": "100px",
-              "padding-right": "100px",
+              paddingLeft: "100px",
+              paddingRight: "100px",
             }}
           >
             <img src="/Greenerre word.jpg" width="500px" alt="site logo" />

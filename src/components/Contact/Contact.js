@@ -81,7 +81,7 @@ const Contact = () => {
               <textarea rows={3} name="message" className="w-100" />
             </div>
             <div className="col-md-3 col-sm-12 py-4 px-5 form-item">
-              <button type="submit" className="btn btn-submit w-100 border-0 ">
+              <button type="submit" className="btn btn-submit w-100 border-0">
                 Submit
               </button>
             </div>

@@ -6,7 +6,7 @@ import HomeContent from "../../components/HomeContent/HomeContent";
 const Home = () => {
   return (
     <>
-      <HomeCarousel />
+      {/* <HomeCarousel /> */}
       <HomeContent />
     </>
   );

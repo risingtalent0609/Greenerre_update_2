@@ -25,7 +25,7 @@ const HomeCarousel = () => {
             alt="First slide"
           />
 
-          <Link>
+          <Link to={"#"}>
             <div className="banner-description">
               {/* <img
                 src="/slide/esg-reporting.jpg"
@@ -45,7 +45,7 @@ const HomeCarousel = () => {
             alt="Second slide"
           />
 
-          <Link>
+          <Link to={"#"}>
             <div className="banner-description">
               {/* <img
                 src="/slide/tree-planting.jpg"
@@ -65,7 +65,7 @@ const HomeCarousel = () => {
             src="/slide/slide3.webp"
             alt="Third slide"
           />
-          <Link>
+          <Link to={"#"}>
             <div className="banner-description">
               {/* <img
                 src="/slide/web3-business.png"

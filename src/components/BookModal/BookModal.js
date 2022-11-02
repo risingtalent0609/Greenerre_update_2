@@ -8,7 +8,7 @@ const BookModal = (props) => {
   const formRef = useRef(null);
 
   const scriptUrl =
-    "https://script.google.com/macros/s/AKfycbw1YiviawtNFHzZ_hARkEEqZFION8lWiTBqSw7TfYhwrCQX__s-hUIqZ2fh_xwRlt_q/exec";
+    "https://script.google.com/macros/s/AKfycbznmQI32sMPI0VoWv7z2cE-kN3XEK8t8toViXBHvadMkkUIesvxw8meTEGnG3j_uKY_/exec";
 
   const [date, setDate] = useState(new Date());
 

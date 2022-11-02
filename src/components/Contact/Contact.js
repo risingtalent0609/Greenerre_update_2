@@ -11,6 +11,7 @@ const Contact = () => {
 
     fetch(scriptUrl, { method: "POST", body: new FormData(formRef.current) })
       .then((res) => {
+        alert("Your information Confirmed!");
         console.log("SUCCESSFULLY SUBMITTED");
       })
       .catch((err) => console.log(err));

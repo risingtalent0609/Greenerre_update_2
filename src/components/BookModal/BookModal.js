@@ -39,7 +39,7 @@ const BookModal = (props) => {
             <Form.Label>Name</Form.Label>
             <Form.Control
               type="text"
-              name="name"
+              name="Name"
               placeholder="Name"
             ></Form.Control>
           </Form.Group>
@@ -47,7 +47,7 @@ const BookModal = (props) => {
             <Form.Label>Organisation</Form.Label>
             <Form.Control
               type="text"
-              name="organisation"
+              name="Organisation"
               placeholder="Organisation"
             ></Form.Control>
           </Form.Group>
@@ -55,7 +55,7 @@ const BookModal = (props) => {
             <Form.Label>Position</Form.Label>
             <Form.Control
               type="text"
-              name="position"
+              name="Position"
               placeholder="Position"
             ></Form.Control>
           </Form.Group>
@@ -63,7 +63,7 @@ const BookModal = (props) => {
             <Form.Label>Email</Form.Label>
             <Form.Control
               type="email"
-              name="email"
+              name="Email"
               placeholder="Email"
             ></Form.Control>
             <Form.Text className="text-muted">
@@ -74,7 +74,7 @@ const BookModal = (props) => {
             <Form.Label>DateTime</Form.Label>
             <DateTimePicker
               value={date}
-              name="date"
+              name="Date"
               onChange={setDate}
               className="form-control"
               minDate={new Date()}

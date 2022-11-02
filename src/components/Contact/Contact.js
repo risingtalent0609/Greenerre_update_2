@@ -32,7 +32,7 @@ const Contact = () => {
             <div className="col-md-12 col-sm-12 px-5">
               <div className="form-item my-4">
                 <label className="contact-form-label">Name *</label> <br />
-                <input type="text" name="name" className="contact-form-item" />
+                <input type="text" name="Name" className="contact-form-item" />
               </div>
             </div>
             <div className="col-md-12 col-sm-12 px-5">
@@ -41,7 +41,7 @@ const Contact = () => {
                 <br />
                 <input
                   type="text"
-                  name="organisation"
+                  name="Organisation"
                   className="contact-form-item"
                 />
               </div>
@@ -51,7 +51,7 @@ const Contact = () => {
                 <label className="contact-form-label">Position *</label> <br />
                 <input
                   type="text"
-                  name="position"
+                  name="Position"
                   className="contact-form-item"
                 />
               </div>
@@ -61,14 +61,14 @@ const Contact = () => {
             <div className="col-md-12 col-sm-12 px-5">
               <div className="form-item my-4">
                 <label className="contact-form-label">Email *</label> <br />
-                <input type="text" name="email" className="contact-form-item" />
+                <input type="text" name="Email" className="contact-form-item" />
               </div>
             </div>
             <div className="col-md-12 col-sm-12 px-5">
               <div className="form-item my-4">
                 <label className="contact-form-label">Subject *</label> <br />
                 <input
-                  name="subject"
+                  name="Subject"
                   type="text"
                   className="contact-form-item"
                 />
@@ -79,7 +79,7 @@ const Contact = () => {
             s
             <div className="col-md-12 col-sm-12 py-4 px-5 form-item">
               <label className="contact-form-label">Message *</label> <br />
-              <textarea rows={3} name="message" className="w-100" />
+              <textarea rows={3} name="Message" className="w-100" />
             </div>
             <div className="col-md-3 col-sm-12 py-4 px-5 form-item">
               <button type="submit" className="btn btn-submit w-100 border-0">

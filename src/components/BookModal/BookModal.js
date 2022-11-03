@@ -80,10 +80,10 @@ const BookModal = (props) => {
               minDate={new Date()}
             />
           </Form.Group>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="secondary" onClick={handleClose} className="m-2">
             Close
           </Button>
-          <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit" className="m-2">
             Book
           </Button>
         </Form>

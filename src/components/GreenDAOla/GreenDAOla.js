@@ -271,7 +271,7 @@ const GreenDAOla = () => {
       }
     }
     setApprove();
-  }, [show_approve]);
+  }, [show_approve, buyOrSell]);
 
   // Sell settings
   const sellToken = async () => {

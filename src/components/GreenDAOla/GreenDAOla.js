@@ -20,7 +20,7 @@ const GreenDAOla = () => {
   const [buyOrSell, setBuyOrSell] = useState(0); // 1 for buy, 2 for sell
   // const [approved , setApproved] = useState(false);
   const buyToken = async () => {
-    if (typeof window.ethereum !==== "undefined") {
+    if (typeof window.ethereum !== "undefined") {
       const accounts = await window.ethereum.request({
         method: "eth_requestAccounts",
       });
@@ -34,7 +34,7 @@ const GreenDAOla = () => {
   useEffect(() => {
     async function startComponent() {
       let accounts;
-      if (typeof window.ethereum !==== "undefined") {
+      if (typeof window.ethereum !== "undefined") {
         accounts = await window.ethereum.request({
           method: "eth_requestAccounts",
         });
@@ -218,7 +218,7 @@ const GreenDAOla = () => {
           provider
         );
         let accounts;
-        if (typeof window.ethereum !==== "undefined") {
+        if (typeof window.ethereum !== "undefined") {
           accounts = await window.ethereum.request({
             method: "eth_requestAccounts",
           });
@@ -250,7 +250,7 @@ const GreenDAOla = () => {
           provider
         );
         let accounts;
-        if (typeof window.ethereum !==== "undefined") {
+        if (typeof window.ethereum !== "undefined") {
           accounts = await window.ethereum.request({
             method: "eth_requestAccounts",
           });
@@ -275,7 +275,7 @@ const GreenDAOla = () => {
 
   // Sell settings
   const sellToken = async () => {
-    if (typeof window.ethereum !==== "undefined") {
+    if (typeof window.ethereum !== "undefined") {
       const accounts = await window.ethereum.request({
         method: "eth_requestAccounts",
       });

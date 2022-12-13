@@ -20,11 +20,11 @@ const GreenDAOla = () => {
   const [buyOrSell, setBuyOrSell] = useState(0); // 1 for buy, 2 for sell
   // const [approved , setApproved] = useState(false);
   const buyToken = async () => {
-    if (typeof window.ethereum !== "undefined") {
+    if (typeof window.ethereum !==== "undefined") {
       const accounts = await window.ethereum.request({
         method: "eth_requestAccounts",
       });
-      if (accounts[0] != null) {
+      if (accounts[0] !== null) {
         setShow(true);
         setBuyOrSell(1);
       }
@@ -34,7 +34,7 @@ const GreenDAOla = () => {
   useEffect(() => {
     async function startComponent() {
       let accounts;
-      if (typeof window.ethereum !== "undefined") {
+      if (typeof window.ethereum !==== "undefined") {
         accounts = await window.ethereum.request({
           method: "eth_requestAccounts",
         });
@@ -67,7 +67,7 @@ const GreenDAOla = () => {
     );
     const tx = await GreenDaoToken.stake(stakeAmount * 100000000);
     const receipt = await tx.wait();
-    if (receipt.status == 0) return;
+    if (receipt.status === 0) return;
   };
 
   const unstake_token = async () => {
@@ -80,13 +80,13 @@ const GreenDAOla = () => {
     );
     const tx = await GreenDaoToken.unStake();
     const receipt = await tx.wait();
-    if (receipt.status == 0) return;
+    if (receipt.status === 0) return;
   };
 
   const approve = async () => {
     const provider = new ethers.providers.Web3Provider(window.ethereum, "any");
     const signer = provider.getSigner(address);
-    if (buyOrSell == 1) {
+    if (buyOrSell === 1) {
       const DAITOKEN = new ethers.Contract(
         "0x001B3B4d0F3714Ca98ba10F6042DaEbF0B1B7b6F",
         DAIABI,
@@ -97,7 +97,7 @@ const GreenDAOla = () => {
         "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
       );
       const receipt = await tx.wait();
-      if (receipt.status == 0) return;
+      if (receipt.status === 0) return;
 
       let element = document.getElementById("approve_id");
       element.classList.remove("active");
@@ -106,7 +106,7 @@ const GreenDAOla = () => {
       document.getElementById("approve_button").disabled = true;
       // button enable1
       document.getElementyId("swap_button").disabled = false;
-    } else if (buyOrSell == 2) {
+    } else if (buyOrSell === 2) {
       const GreenDaoToken = new ethers.Contract(
         "0xaf243F40B5984b0E4fb89e68eeAD5D01Bac8A7c6",
         GreenDaoTokenABI,
@@ -117,7 +117,7 @@ const GreenDAOla = () => {
         "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
       );
       const receipt = await tx.wait();
-      if (receipt.status == 0) return;
+      if (receipt.status === 0) return;
 
       let element = document.getElementById("approve_id");
       element.classList.remove("active");
@@ -139,7 +139,7 @@ const GreenDAOla = () => {
     );
     const tx = await GreenDaoDEX.swap(buyOrSell - 1, amount * 100000000);
     const receipt = await tx.wait();
-    if (receipt.status == 0) return;
+    if (receipt.status === 0) return;
 
     let element = document.getElementById("swap_id");
     element.classList.remove("active");
@@ -173,12 +173,12 @@ const GreenDAOla = () => {
     }
     setAddress(accounts[0]);
 
-    if (buyOrSell == 1) {
+    if (buyOrSell === 1) {
       const allowanceOfDAI = await DAITOKEN.allowance(
         accounts[0],
         GreenDaoDEX.address
       );
-      if (allowanceOfDAI.toString() != "0") {
+      if (allowanceOfDAI.toString() !== "0") {
         setShow(false);
         set_show_approve(true);
       } else {
@@ -190,7 +190,7 @@ const GreenDAOla = () => {
         accounts[0],
         GreenDaoDEX.address
       );
-      if (allowanceOfGreenDAO.toString() != "0") {
+      if (allowanceOfGreenDAO.toString() !== "0") {
         setShow(false);
         set_show_approve(true);
       } else {
@@ -206,7 +206,7 @@ const GreenDAOla = () => {
         window.ethereum,
         "any"
       );
-      if (buyOrSell == 1) {
+      if (buyOrSell === 1) {
         const DAITOKEN = new ethers.Contract(
           "0x001B3B4d0F3714Ca98ba10F6042DaEbF0B1B7b6F",
           DAIABI,
@@ -218,7 +218,7 @@ const GreenDAOla = () => {
           provider
         );
         let accounts;
-        if (typeof window.ethereum !== "undefined") {
+        if (typeof window.ethereum !==== "undefined") {
           accounts = await window.ethereum.request({
             method: "eth_requestAccounts",
           });
@@ -230,7 +230,7 @@ const GreenDAOla = () => {
         );
         console.log(allowanceOfDAI.toString());
 
-        if (allowanceOfDAI != "0") {
+        if (allowanceOfDAI !== "0") {
           let element = document.getElementById("approve_id");
           element.classList.remove("active");
           element.classList.add("completed");
@@ -238,7 +238,7 @@ const GreenDAOla = () => {
           document.getElementById("approve_button").disabled = true;
         }
       }
-      if (buyOrSell == 2) {
+      if (buyOrSell === 2) {
         const GreenDaoToken = new ethers.Contract(
           "0xaf243F40B5984b0E4fb89e68eeAD5D01Bac8A7c6",
           GreenDaoTokenABI,
@@ -250,7 +250,7 @@ const GreenDAOla = () => {
           provider
         );
         let accounts;
-        if (typeof window.ethereum !== "undefined") {
+        if (typeof window.ethereum !==== "undefined") {
           accounts = await window.ethereum.request({
             method: "eth_requestAccounts",
           });
@@ -261,7 +261,7 @@ const GreenDAOla = () => {
         );
         console.log(allowanceOfDAI.toString());
 
-        if (allowanceOfDAI != "0") {
+        if (allowanceOfDAI !== "0") {
           let element = document.getElementById("approve_id");
           element.classList.remove("active");
           element.classList.add("completed");
@@ -275,11 +275,11 @@ const GreenDAOla = () => {
 
   // Sell settings
   const sellToken = async () => {
-    if (typeof window.ethereum !== "undefined") {
+    if (typeof window.ethereum !==== "undefined") {
       const accounts = await window.ethereum.request({
         method: "eth_requestAccounts",
       });
-      if (accounts[0] != null) {
+      if (accounts[0] !== null) {
         setShow(true);
         setBuyOrSell(2);
       }
@@ -406,7 +406,7 @@ const GreenDAOla = () => {
           <Button
             variant="success"
             onClick={() => {
-              if (document.getElementById("quantity").value == "0") {
+              if (document.getElementById("quantity").value === "0") {
                 alert("quantity needed~!");
               } else {
                 confirmButtonClick();

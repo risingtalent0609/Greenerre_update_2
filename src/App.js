@@ -12,6 +12,7 @@ import GreenDAOlaPage from "./pages/GreenDAOla/GreenDAOla";
 import VPetsPage from "./pages/VPets/VPets";
 import GreenerMarketPage from "./pages/GreenerMarket/GreenerMarket";
 import ComingSoonPage from "./pages/ComingSoon/ComingSoon";
+import Profile from "./pages/Profile/Profile";
 
 //import components
 import Contact from "./components/Contact/Contact";
@@ -36,7 +37,7 @@ function App() {
         <Route path="/greenDAOla" element={<GreenDAOlaPage />} />
         <Route path="/vpets" element={<VPetsPage />} />
         <Route path="/market" element={<GreenerMarketPage />} />
-        <Route path="/soon" element={<ComingSoonPage />} />
+        <Route path="/profileView" element={<Profile />} />
       </Routes>
       <Contact />
       <Footer />

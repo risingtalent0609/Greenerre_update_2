@@ -322,7 +322,6 @@ const GreenDAOla = () => {
 
             <Row className="mt-4">
               <Col className="  ">
-                <p>Stake Amount : </p>
                 <Button
                   onClick={stake_token}
                   variant="success"
@@ -330,15 +329,9 @@ const GreenDAOla = () => {
                 >
                   STAKE
                 </Button>
+                <p className="mt-3">Stake Amount : </p>
               </Col>
               <Col className=" ">
-                <input
-                  className="form-control m-2"
-                  type="number"
-                  onChange={(e) => {
-                    setStateAmount(e.target.value);
-                  }}
-                />
                 <Button
                   onClick={unstake_token}
                   variant="danger"
@@ -346,6 +339,13 @@ const GreenDAOla = () => {
                 >
                   UNSTAKE
                 </Button>
+                <input
+                  className="form-control m-2"
+                  type="number"
+                  onChange={(e) => {
+                    setStateAmount(e.target.value);
+                  }}
+                />
               </Col>
             </Row>
           </Col>
